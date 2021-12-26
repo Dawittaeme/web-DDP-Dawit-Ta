@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>
+
+           SVG shapes and text
+
+        </title>
+
+        <style>svg{border:10px solidblack}</style>
+
+    </head>
+
+    <body leftmargin="2%s">
+
+        <h1>Creating SVG shapes and texts</h1>
+
+        
+
+        <table cellspacing="50px" cellpadding="5px">
+
+            <tr><td><h3>SVG line</h3>
+
+            <svg width="160" height="140">
+
+                <line x1="25" y1="35" x2="89" y2="105" stroke="blue" stroke-width="5"/>
+
+            </svg>  
+
+            </td></tr>
+
+            <tr><td><h3>SVG Rectangle</h3>
+
+                <svg width="160" height="140">
+
+                    <rect x="25" y="15" rx="30" ry="30" width="110" height="110" style="fill:yellow;
+
+                    stroke:black; stroke-width:10" />
+
+   
+
+                </svg>  
+
+                </td></tr>
+
+                <tr><td><h3>SVG rounded Rectangle</h3>
+
+                    <svg width="160" height="130">
+
+                        <rect x="10" y="20" rx="30" ry="30"  width="140" height="100"
+
+                        style="fill:red; stroke:blueviolet;stroke-width:5; opacity:0.5"/>
+
+                    </svg>  
+
+                    </td></tr>
+
+                    <tr><td><h3>SVG Polygon</h3>
+
+                        <svg width="180" height="180">
+
+                            <polygon points="80,10,20,148,150,60,10,60,120,148"
+
+                            style="fill:red; stroke:yellow; stroke-width:4; fill-rule:nonezero;"/>
+
+                        </svg>  
+
+                        </td></tr>
+
+                        <tr><td><h3>SVG Logo using Eclipse</h3>
+
+                            <svg width="200" height="130">
+
+                                <ellipse cx="100" cy="70" rx="85" ry="55" 
+
+                                fill="pink"/>
+
+                                <text fill="000045" font-size="35" font-family="Verdana" x="50" y="86">
+
+                                  SVG
+
+                                </text>
+
+                                <defs><linearGradient x1="0%" y1="0%" x2="100%" y2="0%">
+
+                                    <stop offset="0%" style="stop-color:brown; stop-opacity:2;" />
+
+                                    <stop offset="100%" style="stop-color:chocolate; stop-opacity: 2;"/>
+
+                                </linearGradient></defs>
+
+                            </svg>  
+
+                            </td></tr>
+
+                                
+
+        </table>
+
+        <h3>Polyline and ellipse using SVG</h3>
+
+        <svg height="150" width="450">
+
+            <polyline points="80,78,45,67,150,33,89,160,140,170,190,210"
+
+                      style="fill:coral;stroke:darkblue;stroke-width:7"/>
+
+            <polyline points="80,20,120,60,160,60,160,100,200,100,200,140,200,140"
+
+                      style="fill:none;stroke:black;stroke-width:7"/>
+
+                      Sorry, your browser does not support inline SVG.
+
+        </svg>
+
+
+
+        <svg height="150" width="450">
+
+            <ellipse cx="180" cy="100" rx="120" ry="30" style="fill:greenyellow"/>
+
+            <ellipse cx="170" cy="70" rx="90" ry="20" style="fill:indianred"/>
+
+            <ellipse cx="175" cy="45" rx="70" ry="15" style="fill:maroon"/>
+
+        </svg>
+
+        <h3>SVG text</h3>
+
+        <svg  height="60" width="200">
+
+            <g>
+
+                <text x="35" y="19">Text:</text>
+
+                <text x="35" y="35" fill="red">IP Exercise in svg</text>
+
+            </g>
+
+        </svg>
+
+        <h3>SVG text with rotate</h3>
+
+        <svg  height="80" width="200">
+
+                <text x="0" y="15" fill="red" transform="rotate(30,20,40)">This is IP exercise</text>
+
+        </svg>
+
+        <svg width="570" height="100">
+
+              <g>
+
+                  <text x="40" y="23">Multiline text:</text>
+
+                  <text x="40" y="40" fill="green">Learn SVG
+
+                <tspan x="40" y="60" font-weight="bold">SVG is easy to learn
+
+                    </tspan> </text>
+
+             </g></svg>
+
+             <svg>
+
+                 <g>
+
+                     <text x="20" y="10" >Text as link:</text>
+
+                     <a xlink:href="https://www.w3schools.com/html/html5_svg.asp"target="_blank">
+
+                         <text x="40" y="40" font-family="verdana" font-size="15" fill="maroon">www.w3schools.com</text>
+
+                     </a>
+
+                 </g></svg>
+
+    </body>
+
+</html>
