@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+        }
+        .head{
+            align-items: center;
+            display: flex;
+        }
+        img{
+            margin-right:200px;
+
+        }
+        
+        .head ul{
+            display: flex;
+            color: rgb(16, 26, 18);
+            width: 300;
+            align-items: center;
+            list-style-type: none;
+        }
+        .h{
+            text-align: center;
+        }
+        
+        .parag{
+                position: relative;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                text-align: center;
+                text-size-adjust: 20;
+        }
+        .parag:after{
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+                height: 4px;
+                width: 300px;
+                border-radius: 2px;
+                background-color: #4fe614;
+            }
+        .signin{
+            align-items: center;
+            
+            
+        }
+        .signbox{
+                max-width: 450px;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0px 0px 19px 5px rgba(0,0, 0, 0.19);
+                margin-left: 300px;
+                margin-top: 100px;
+            }
+        .inbox{
+                align-items: center;
+                padding: 25px 40px;
+            }
+            .btn{
+                width: 100%;
+                padding: 9px 25px;
+                font-size: 1.1rem;
+                background-color: #40c71e;
+                cursor: pointer;
+                outline: none;
+                border: none;
+                color: #fff;
+                transition: .3s;
+
+            }
+            .btn:hover{
+                background-color: #5e203f
+
+            }
+        input[type="email"],input[type="password"]{
+        width: 300;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 1.3em;
+        }
+        nav{
+            float: right;
+            margin-left: 50%;
+
+        }
+        
+        .video1{
+            margin-top: 100px;
+            align-items: center;
+            margin-left: 400px;
+            margin-bottom: 100px;
+        }
+        .head li {
+        margin: 10px;
+        }
+        video{
+            box-shadow: 2px 3px 30px rgb(202, 40, 18);
+        }
+        
+    </style>
+    <script>
+        function myFunction() {
+          alert("The video was paused.");
+        }
+        </script>
+        
+</head>
+<body>
+    <div class="head">
+        <img src="gold.jpg" alt="logo" width="100" height="100">
+        <nav>
+        <ul>
+            <li>Home</li>
+            <li>Register</li>
+            <li>application</li>
+            <li>Contact us</li>
+        </ul>
+    </nav>
+    </div>
+    <hr size 3px black>
+    <div class="signin">
+        <h2 class="h">
+            SIGN IN
+        </h2>
+        
+        <h3 class="parag">Signin and get full acess to our resource</h3>
+        
+        <div class="signbox">
+            <div class="inbox">
+                <form  id="my_form" method="get">
+                    <label for="Username">Email</label>
+                    <input type="email" name="Username" id="email" onfocus="onFo(this)"  onblur="onbl(this)" placeholder="Email"  required><br><br>
+                    <label for="passwd">Password</label>
+                    <input type="password" name="passwd" id="pas" onfocus="onFo(this)" onblur="onbl(this)" placeholder="password" min=8 required><br><br>
+                    <button class="btn">Sign in</button>
+                  
+                </form> 
+            </div>
+            
+        </div>
+            
+    </div>
+    <br><br>
+    <div class="video1">
+        <video width="320" height="240" controls onpause="myFunction()">
+            <source src="24_HOURS.mp4" type="video/mp4">
+            
+            Your browser does not support the video tag.
+          </video>
+    </div>
+</body>
+</html>
